@@ -1,0 +1,110 @@
+body {
+  margin: 50px 100px;
+  background-color: #1d2029;
+  color: white;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #4092d3, #3ed191);
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 5px;
+  background-color: white;
+  transition: 0.2s;
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(#ccc, #ccc);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+img {
+  height: 30px;
+}
+
+.card {
+  background-color: #252b43;
+  color: white;
+  padding: 20px;
+  border: 0;
+}
+
+.card:hover {
+  background-color: #333a56;
+}
+
+.facebook {
+  border-top: 5px solid #1890F2;
+}
+.facebook i {
+  color: #1890F2;
+}
+
+.twitter {
+  border-top: 5px solid #1DA2EF;
+}
+.twitter i {
+  color: #1DA2EF;
+}
+
+.youtube {
+  border-top: 5px solid #C5052C;
+}
+.youtube i {
+  color: #C5052C;
+}
+
+.instagram {
+  border-top: 5px solid;
+  -o-border-image: linear-gradient(to right, #FDBF6B, #E14E93) 1 0 0 0;
+     border-image: linear-gradient(to right, #FDBF6B, #E14E93) 1 0 0 0;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+}
+.instagram i {
+  color: #f18c7e;
+}
+
+.card-wrapper2 span {
+  color: #3ed191;
+}/*# sourceMappingURL=dashboard.css.map */
